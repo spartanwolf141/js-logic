@@ -76,7 +76,7 @@ function isGreaterThan(first, second){
     return true;
   }
   } 
-console.log(isGreaterThan(7, 6))
+console.log('isGreaterThan:', isGreaterThan(7, 6))
 
 
 /*
@@ -109,8 +109,10 @@ console.log('mustBeTrue:', true)
  * Console.log your result.
 */
 function bigBird(word){
-  
-}
+  if(word.length === 3){
+    return 'Word to Big Bird!';
+  }
+}console.log(bigBird('map'))
 
 
 /*
@@ -125,7 +127,13 @@ function bigBird(word){
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
+function isEqual(first, second){
+  if (first === second){
+    return 'You look marvelous';
+  }else{
+    return 'I dont know who you are anymore.';
+  }
+} console.log(isEqual('string', 'string'))
 
 /*
  * #7
@@ -139,7 +147,13 @@ function bigBird(word){
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
+function notEqual(first, second){
+  if(first !== second){
+    return 'Opposites do attract.';
+  }else{
+    return 'Cause its like youre my mirror';
+  }
+} console.log(notEqual('string', 'number'))
 
 /*
  * #8
@@ -152,8 +166,14 @@ function bigBird(word){
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function spareChange(money){
+  if(money>100){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log('spareChange:', spareChange(68))
 
 /*
  * #9
@@ -168,8 +188,15 @@ function bigBird(word){
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function dirty30(one, two, three){
+  var sum = one+two+three;
+  if(sum>30){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log(dirty30(10, 10, 20))
 
 /*
  * #10
@@ -182,8 +209,14 @@ function bigBird(word){
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function evenStevens(num){
+  if(num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log('evenStevens:', evenStevens(4))
 
 
 /*
