@@ -17,7 +17,7 @@ function day(today){
     return "Get back to coding!";
   };
 } 
-console.log(day("Friday"));
+console.log(day("Monday"));
 
 
 
@@ -32,8 +32,14 @@ console.log(day("Friday"));
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-
-
+function canVote(age){
+  if(age >= 21){
+    return 'can vote.'
+  }else{
+    return 'maybe next year.'
+  }
+}
+console.log(canVote(21))
 /*
  * #2
  * Function - login
@@ -45,8 +51,14 @@ console.log(day("Friday"));
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
-
+function login(password){
+  if(password === 'test1234'){
+    return 'Login Successful!'
+  }else{
+    return 'Sorry try again.'
+  }
+}
+console.log(login('test1234'))
 /*
  * #3
  * Function - isGreaterThan
@@ -59,7 +71,12 @@ console.log(day("Friday"));
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
-
+function isGreaterThan(first, second){
+  if(first > second){
+    return true;
+  }
+  } 
+console.log(isGreaterThan(7, 6))
 
 
 /*
@@ -73,8 +90,12 @@ console.log(day("Friday"));
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
-
+function mustBeTrue(boo){
+  if(true){
+    return true;
+  }
+}
+console.log('mustBeTrue:', true)
 
 /*
  * #5
@@ -87,7 +108,9 @@ console.log(day("Friday"));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
+function bigBird(word){
+  
+}
 
 
 /*
