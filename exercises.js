@@ -231,8 +231,14 @@ console.log('evenStevens:', evenStevens(4))
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
-
+function daClub(cover, age){
+  if(cover>=21, age>=21){
+    return 'Welcome to the Legends Lounge.'
+  }else{
+    return 'Chuck E Cheese is across the street.'
+  }
+}
+console.log(daClub(21, 21))
 /*
  * #12
  * Function - graduation
@@ -245,8 +251,14 @@ console.log('evenStevens:', evenStevens(4))
  * If EITHER the credits value is greater than or equal to 120 or the grades value is greater than or equal to 2.0, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
-
+function graduation(credits, grades){
+  if(credits>=120||grades>=2.0){
+    return 'Congratulations on a job well done.'
+  }else{
+    return 'See you in summer school.'
+  }
+}
+console.log(graduation(125, 2.5))
 
 /*
  * #13
@@ -259,8 +271,16 @@ console.log('evenStevens:', evenStevens(4))
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
-
+function moneyTrain(speed){
+  if(speed<50){
+    return 'You are riding Honolulu Rail.'
+  }else if(speed<100){
+    return 'You are riding an Amtrak.'
+  }if(speed>=100){
+    return 'Now you ballin in the Shinkansen!'
+  }
+}
+console.log(moneyTrain(75))
 /*
  * #14
  * Function - buyDoughnut
@@ -274,6 +294,20 @@ console.log('evenStevens:', evenStevens(4))
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 70;
+var doughnutPrice = 5;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+ if(budget >= doughnutPrice){ 
+  budget -= doughnutPrice;
+  doughnutBought++;
+ }
+}
+
+buyDoughnut();
+console.log("budget ", budget);
+console.log("bought ", doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
